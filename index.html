@@ -65,18 +65,22 @@
       </div>
 
       <div
-        id="id"
+        id="menu"
         class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
       >
-        <a href="#" class="w-full text-center">Features</a>
-        <a href="#" class="w-full text-center">Pricing</a>
-        <a href="#" class="w-full text-center">Resources</a>
-        <a href="#" class="w-full pt-6 border-t border-gray-400 text-center"
-          >Login</a
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
         >
-        <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
-          >Sign Up</a
-        >
+          <a href="#" class="w-full text-center">Features</a>
+          <a href="#" class="w-full text-center">Pricing</a>
+          <a href="#" class="w-full text-center">Resources</a>
+          <a href="#" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Login</a
+          >
+          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+            >Sign Up</a
+          >
+        </div>
       </div>
     </nav>
 
@@ -123,20 +127,22 @@
         >
           <input
             type="text"
-            name="linkInput"
+            name="link-input"
             id="link-input"
             placeholder="Shorten a link here"
             class="flex-1 p-3 border-2 rounded-lg placholder-yellow-500 foucus:outline-none"
           />
           <button
-            type="submit"
             class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
           >
             Shorten It
           </button>
 
           <!-- Error Message -->
-          <div class="absolute left-y bottom-3 rext-reed text-sm italic"></div>
+          <div
+            id="err-msg"
+            class="absolute left-y bottom-3 text-red text-sm italic"
+          ></div>
         </form>
 
         <!-- Link 1 -->
